@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk 2077</title>
+    <style>
+        @font-face {
+            font-family: fonte8bit;
+            src: url(fonts/PressStart2P-Regular.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            font-family: fonte8bit;
+        }
+
+        body {
+            background-color: rgb(255, 250, 0);
+        }
+
+        nav {
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 1px;
+            border: 0px;
+        }
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 20px;
+            border: 0px;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: rgb(255, 250, 0);
+            display: block;
+            transition: all .5s;
+        }
+
+        li:hover,
+        li:hover a {
+            background-color: rgb(255, 250, 0);
+            color: rgb(0, 0, 0);
+            border: 0px;
+        }
+
+        .titulo {
+            font-size: 30px;
+            justify-content: center;
+        }
+
+        section {
+            display: flex;
+            flex-flow: column;
+            padding: 30px;
+        }
+
+        section div {
+            padding: 10px;
+            justify-content: justify;
+        }
+
+        h2 {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .fotos {
+            max-width: 450px;
+            height: auto;
+            box-shadow: 5px 10px 5px;
+        }
+
+        iframe {
+            box-shadow: 5px 10px 5px;
+
+        }
+
+        .banner {
+            width: 100%;
+            height: auto;
+        }
+
+        .icone {
+            max-width: 50px;
+            width: 100%;
+            height: auto;
+            box-shadow: none;
+        }
+        .invertida{
+            display: flex;
+            flex-flow: column-reverse;
+            padding: 30px;
+        }
+
+        p {
+            padding: 10px;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 250, 0);
+            text-align: center;
+            padding: 10px;
+        }
+        .links {
+            text-align: center;
+        }
+
+        @media screen and (min-width: 600px) {
+            section {
+                display: flex;
+                flex-flow: row;
+                padding: 30px;
+            }
+            .invertida {
+                display: flex;
+                flex-flow: row;
+                padding: 30px;
+            }
+
+            section img {
+                max-width: 600px;
+                height: auto;
+                box-shadow: 5px 10px 5px rgb(0, 0, 0);
+            }
+
+            .icone {
+                max-width: 50px;
+                width: 100%;
+                height: auto;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="nfs.html">NFS Heat</a></li>
+                <li><a href="lol.html">League of Legends</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img class="banner" src="img/bannercb.jpg" alt="">
+        <section class="titulo">
+            <h1>CYBERPUNK 2077</h1>
+        </section>
+        <section>
+            <div>
+                <img class="fotos" src="img/nightcity.jpg" alt="">
+            </div>
+            <div>
+                <h2>NIGHT CITY MUDARÁ VOCÊ</h2>
+                <p>Cyberpunk 2077 é uma história de ação e aventura de mundo aberto ambientada em Night City, uma
+                    megalópole obcecada por poder, glamour e biomodificações. Você joga como V, um mercenário fora da
+                    lei atrás de um implante único que carrega a chave da imortalidade. Você pode personalizar aparatos
+                    cibernéticos, conjunto de habilidades e estilo de jogo do personagem e explorar uma vasta cidade
+                    onde as decisões tomadas definem a história e o mundo ao seu redor.</p>
+            </div>
+        </section>
+        <section class="invertida">
+            <div>
+                <h2>Jogue como um mercenário fora da lei</h2>
+                <p><span>Use uma variedade de armas aprimoradas, habilidades de hack e implantes de melhorias corporais
+                        para se tornar o melhor matador de aluguel da cidade. Derrube todos, desde seguranças
+                        corporativas e poliicais atpe gangues e outros mercenparios para ganhar credibilidade.</p>
+            </div>
+            <div>
+                <img class="fotos" src="img/mercenario.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div>
+                <img class="fotos" src="img/cyber3.jpg" alt="">
+            </div>
+            <div>
+                <h2>O que você prefere: viver em paz como um Sr. Ninguém... ou morrer gloriosamente?</h2>
+                <p>Jogo já disponivel nas plataformas:</p>
+                <ul class="links">
+                    <li><a href="https://store.playstation.com/pt-br/product/UP4497-CUSA16596_00-0000000000000004"><img class="icone" src="img/psn.png" alt=""></a></li>
+                    <li><a href="https://www.xbox.com/pt-BR/games/cyberpunk-2077"><img class="icone" src="img/steam.png" alt=""></a></li>
+                    <li><a href="https://store.steampowered.com/agecheck/app/1091500/?l=brazilian"><img class="icone" src="img/xbox.png" alt=""></a></li>
+                </ul>
+
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        Produzido por Bruno da Silva Menezes
+    </footer>
+</body>
+
+</html>

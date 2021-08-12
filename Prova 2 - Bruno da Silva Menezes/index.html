@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Final - Bruno da Silva Menezes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: verdana;
+
+        }
+
+        nav {
+            background-color: rgb(255, 82, 0);
+            text-align: center;
+            padding: 1px;
+
+        }
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 20px;
+            border: 0px;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        li:hover,
+        li:hover a {
+            background-color: white;
+            color: rgb(255, 82, 0);
+        }
+
+
+        .fundoazul {
+            background-color: rgb(2, 9, 120);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .fundoazul>div {
+            background-color: white;
+            border: 5px solid rgb(255, 82, 0);
+            text-align: center;
+            border-radius: 30px;
+            padding: 20px;
+
+        }
+
+        h1 {
+            font-size: 15px;
+        }
+
+        h2 {
+            color: rgb(255, 82, 0);
+            font-size: 15px;
+        }
+
+        .menu {
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .paragrafos {
+            padding: 30px;
+        }
+
+        h3 {
+            padding: 10px;
+        }
+
+        .paragrafos>p {
+            padding: 10px;
+        }
+
+        .menu>div {
+            text-align: center;
+            padding: 10px;
+        }
+
+
+
+        .menu>div>p {
+            text-align: justify;
+        }
+
+        details {
+            color: rgb(255, 82, 0);
+            font-weight: bold;
+            text-align: justify;
+        }
+
+        details>p {
+            color: rgb(0, 0, 0);
+            font-weight: 1;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: rgb(255, 82, 0);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media screen and (min-width: 600px) {
+            nav {
+                text-align: right;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .imgtopo {
+                content: url("images/logos.png");
+                max-width: 800px;
+                height: auto;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+
+            div {
+                align-items: center;
+            }
+
+            .fundoazul>div {
+                max-width: 1200px;
+                height: auto;
+
+            }
+
+            .menu {
+                display: flex;
+                flex-flow: wrap row;
+                justify-content: center;
+                padding: 10px;
+            }
+
+            .menu>div {
+                width: 290px;
+            }
+
+            .paragrafos {
+                max-width: 1200px;
+                margin: auto;
+            }
+
+            .paragrafos>p {
+                text-align: justify;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Portifólio</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="fundoazul">
+            <div>
+                <h1>Memphix - Manutenções de celulares</h1>
+                <img src="images/logoManutencao.png" alt="" class="imgtopo">
+                <h2>Somos especialistas em todas as marcas de celulares disponiveis atualmente no mercado.</h2>
+            </div>
+        </section>
+        <section>
+            <div class="menu">
+                <div>
+                    <a href="#cel1"><img src="images/portfolio01.jpg" alt=""></a>
+                    <h3>Celular 01</h3>
+                    <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut assumenda quae voluptate
+                            facilis minima! Accusamus, maxime culpa unde laboriosam, rem eaque, nam ipsum sit a dolore
+                            magni quas animi libero!</span></p>
+                    <details>
+                        <summary>Leia Mais</summary>
+                        <p><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum eum debitis magnam
+                                veniam praesentium. Odio, aperiam velit quas, ex, rem sit ratione quae possimus eaque
+                                dolorem porro. Ex, nisi asperiores.</span></p>
+                    </details>
+
+
+                </div>
+                <div>
+                    <img src="images/portfolio02.jpg" alt="">
+                    <h3>Celular 02</h3>
+                    <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In est consequatur deserunt alias
+                            quos reiciendis voluptatibus aperiam nostrum quidem. Necessitatibus, illum! Repellendus
+                            laboriosam quidem suscipit ipsam fuga impedit sint veritatis.</span></p>
+                    <details>
+                        <summary>Leia Mais</summary>
+                        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quos amet placeat nulla
+                                harum? Vero, asperiores nulla quidem libero autem ullam. Sed alias pariatur iste
+                                aperiam, at cupiditate quo nesciunt!</span></p>
+                    </details>
+                </div>
+                <div>
+                    <img src="images/portfolio03.jpg" alt="">
+                    <h3>Celular 03</h3>
+                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, maxime. Ratione consequuntur
+                            inventore necessitatibus cumque eligendi pariatur repellat, nulla et excepturi nihil quod
+                            omnis commodi ut error sint animi atque.</span></p>
+                    <details>
+                        <summary>Leia mais</summary>
+                        <p><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero aut, tenetur, sed
+                                nesciunt at veniam ex aspernatur iste nisi inventore sapiente, quibusdam alias dolorem
+                                aliquid natus et voluptatibus culpa quidem.</span></p>
+                    </details>
+                </div>
+                <div>
+                    <img src="images/portfolio04.jpg" alt="">
+                    <h3>Celular 04</h3>
+                    <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam nisi, vel molestias
+                            praesentium eos similique suscipit quidem nostrum accusantium labore minus exercitationem
+                            placeat maiores sed eveniet atque ratione aperiam natus!</span></p>
+                    <details>
+                        <summary>Leia mais</summary>
+                        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere officia odio
+                                illum dolorum, sequi voluptates vel totam dolore doloremque a vitae possimus, deleniti
+                                quidem numquam, incidunt amet blanditiis sunt.</span></p>
+                    </details>
+                </div>
+            </div>
+            <div class="paragrafos">
+                <h3 id="cel1">Samsung V10</h3>
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, consequuntur dolores dolorem
+                        inventore delectus, fugiat excepturi sequi quam minima cupiditate, tenetur commodi non
+                        doloremque ratione totam assumenda magnam. Eum, veniam.</span><span>Itaque laboriosam excepturi
+                        cum, blanditiis deserunt ut, numquam culpa nisi quo saepe eum accusamus et laudantium fugit
+                        porro nemo, commodi laborum molestias aliquid reiciendis quis minus quam nobis. Tempora,
+                        consectetur?</span></p>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quaerat magni commodi. Voluptate
+                        blanditiis odit, dignissimos, placeat dolores unde dolorum sint nostrum provident, aut expedita?
+                        Ipsum recusandae atque tempora hic.</span><span>Obcaecati, ex sed quibusdam neque adipisci quos
+                        cupiditate, hic in tempora iure molestias consequatur soluta inventore fugit dolore
+                        reprehenderit doloremque reiciendis? Quisquam, eligendi iusto totam dignissimos nulla culpa ab
+                        natus!</span></p>
+                <h3>Iphone V20</h3>
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere atque impedit veritatis
+                        praesentium aliquam nulla perspiciatis magnam nobis dignissimos tempore. Facilis repellat
+                        accusantium officiis unde quasi, temporibus aspernatur recusandae
+                        inventore.</span><span>Voluptatibus earum excepturi optio culpa. Totam impedit quisquam quasi
+                        iure, ullam non laboriosam. Nihil, obcaecati. Harum aut similique consectetur, corporis illo
+                        mollitia sed vel omnis quibusdam hic consequuntur minus dolores.</span></p>
+                <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed nesciunt possimus deleniti
+                        voluptatem vitae quaerat eligendi ullam molestiae excepturi, architecto adipisci nemo aliquid,
+                        maxime explicabo tempora impedit eos quam culpa.</span><span>Labore mollitia asperiores
+                        recusandae dolorum laudantium provident, debitis veniam at doloremque, accusamus ea molestias!
+                        Ratione ullam quasi voluptatem similique natus magni, fuga nisi! Facere at ducimus ut quia natus
+                        iusto?</span></p>
+                <h3>Motorola V30</h3>
+                <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse odio accusamus ipsa delectus
+                        laborum similique vel atque. Enim nulla nesciunt, blanditiis veritatis possimus animi
+                        voluptatem, assumenda itaque quae temporibus distinctio!</span><span>In nihil assumenda
+                        blanditiis a repudiandae suscipit! Minima veritatis hic deserunt molestiae aliquid natus laborum
+                        voluptatibus dolore a voluptas earum, amet in itaque exercitationem eaque aut laboriosam
+                        explicabo expedita tenetur?</span></p>
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi enim eligendi repellat
+                        similique voluptatibus vitae nemo animi. Nisi maxime obcaecati harum unde repellat nulla nam.
+                        Unde dicta similique enim vitae?</span><span>Incidunt suscipit fuga nisi voluptas, ipsa aut id
+                        exercitationem velit quae repellendus molestiae corrupti nesciunt pariatur esse ullam ratione
+                        natus nihil possimus ut enim blanditiis deleniti. Delectus fugit repellat excepturi.</span></p>
+                <h3>Samsung v40</h3>
+                <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse facilis temporibus eveniet?
+                        Exercitationem possimus impedit vitae repudiandae voluptates earum magnam iste temporibus? Nemo
+                        commodi iste ullam doloremque ut culpa esse.</span><span>Consectetur, et quia? Itaque, officiis?
+                        Commodi, provident explicabo incidunt nesciunt ipsam molestiae facere magni blanditiis magnam?
+                        Laborum quas, beatae iusto maxime, a necessitatibus voluptate tempora eum repudiandae quo fuga
+                        ab.</span></p>
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus numquam quo aut?
+                        Similique ipsum porro exercitationem quibusdam facere accusantium optio dolorum voluptatum, illo
+                        provident autem, debitis tempore pariatur iste?</span><span>Nulla velit consequatur temporibus
+                        non assumenda tenetur minima quidem iste facere quis, eveniet ipsam minus fugit hic, quas sint
+                        corrupti aperiam! Iure quisquam ullam laboriosam quod repellendus! Officia, beatae
+                        possimus!</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados</p>
+    </footer>
+</body>
+
+</html>

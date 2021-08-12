@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: verdana;
+        }
+
+        nav {
+            background-color: black;
+            text-align: center;
+            padding: 1px;
+        }
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: white;
+            display: block;
+            transition: all 0.5s;
+        }
+
+        a:hover {
+            animation: rotation 2s infinite linear;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        .imgtopo {
+            width: 100%;
+            height: auto;
+        }
+
+        .cxtitulo {
+            margin: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-top: 40px;
+            transition: all 0.5s;
+        }
+
+        h1:hover {
+            letter-spacing: 10px;
+        }
+
+        h2 {
+            color: red;
+            font-size: 18px;
+            margin-bottom: 40px;
+            transition: all 1s;
+        }
+
+        h2:hover {
+            color: blue;
+        }
+
+        .container {
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: center;
+            background-color: rgb(202, 200, 200);
+            padding: 10px;
+        }
+
+        .container>div {
+            width: 95%;
+            text-align: center;
+        }
+
+        .container>div>img {
+            width: 60px;
+            margin: 10px;
+        }
+
+        h3 {
+            font-size: 30px;
+            color: rgb(34, 138, 34);
+            margin: 10px;
+        }
+
+        .container>div>p {
+            margin: 10px;
+        }
+
+        .cxtexto {
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .cxtexto>div {
+            width: 95%;
+            text-align: center;
+        }
+
+        .cxtexto>div>img {
+            width: 300px;
+            height: auto;
+        }
+
+        .cxtexto>div>p {
+            text-align: justify;
+            padding: 5px;
+        }
+
+        .cxinvertida {
+            display: flex;
+            flex-flow: wrap column-reverse;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .cxinvertida>div {
+            width: 95%;
+            text-align: center;
+        }
+
+        .cxinvertida>div>img {
+            width: 300px;
+            height: auto;
+        }
+
+        .cxinvertida>div>p {
+            text-align: justify;
+            padding: 5px;
+        }
+
+        .terceiro {
+            display: none;
+        }
+
+        footer {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 600px) {
+
+            .cxtexto>div {
+                width: 40%;
+                text-align: center;
+            }
+
+            .cxinvertida>div {
+                width: 40%;
+                text-align: center;
+            }
+
+            .container>div {
+                width: 30%;
+                text-align: center;
+            }
+
+            nav {
+                text-align: right;
+            }
+
+            .container {
+                display: flex;
+                flex-flow: wrap row;
+                justify-content: center;
+                background-color: rgb(202, 200, 200);
+                padding: 10px;
+            }
+
+            .cxtexto {
+                display: flex;
+                flex-flow: wrap row;
+                justify-content: center;
+                padding: 30px;
+            }
+
+            .cxinvertida {
+                display: flex;
+                flex-flow: wrap row;
+                justify-content: center;
+                padding: 30px;
+            }
+            .terceiro {
+            display:block;
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="img/topo.png" alt="" class="imgtopo">
+        <div class="cxtitulo">
+            <h1>Web Design na Prática</h1>
+            <h2>HTML5, CSS3 e JavaScript</h2>
+        </div>
+        <div class="container">
+            <div>
+                <img src="img/html5.png" alt="">
+                <h3>HTML5</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque minima odit, dolores molestias minus
+                    nulla libero perspiciatis nihil. Dolore in repellat sed assumenda inventore id! Perspiciatis, esse
+                    quae. Aut, necessitatibus!</p>
+            </div>
+            <div>
+                <img src="img/css3.png" alt="">
+                <h3>CSS3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae esse laborum autem voluptatem ratione
+                    culpa, aperiam quidem tempore eius nam magni nesciunt hic repellendus aliquid at libero expedita quo
+                    error?</p>
+            </div>
+            <div>
+                <img src="img/javascript.png" alt="">
+                <h3>JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quis illum nulla voluptas aspernatur
+                    ipsam repellat sit, quibusdam quaerat alias officiis, aliquam vitae sed totam itaque provident
+                    explicabo aperiam rerum.</p>
+
+            </div>
+        </div>
+        <div class="cxtexto">
+            <div>
+                <img src="img/portifolio01.jpg" alt="">
+            </div>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus iste maiores necessitatibus
+                    delectus in officia autem illo totam culpa a! At delectus nihil deserunt itaque? Nemo consequatur
+                    quae suscipit? Vitae.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab laboriosam asperiores deserunt
+                    repudiandae voluptas illum, iusto quidem dolorem laudantium porro officia error, reiciendis iure!
+                    Recusandae fugiat sapiente aliquam quae nam?
+                </p>
+                <p class="terceiro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod? Quo, esse
+                    temporibus dolores
+                    illum porro pariatur ratione fugiat exercitationem eos soluta nobis eaque, quam ipsa dolor,
+                    voluptatum atque ad.</p>
+            </div>
+        </div>
+        <div class="cxinvertida">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae rem itaque consectetur veniam
+                    commodi, facere dolore! Dolor, accusantium, dolores est natus earum nesciunt soluta, a suscipit id
+                    iure praesentium facilis!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique at, esse quos totam eius facilis?
+                    Laborum doloremque eos est earum quos obcaecati quod aperiam, molestiae animi debitis ea quidem rem!
+                </p>
+                <p class="terceiro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis soluta aliquid
+                    sequi libero
+                    incidunt odit laudantium, ullam, quibusdam nisi aspernatur ad facilis, inventore temporibus quae
+                    rerum nam eveniet consequuntur reiciendis!</p>
+            </div>
+            <div>
+                <img src="img/portifolio02.jpg" alt="">
+            </div>
+        </div>
+        <div class="cxtexto">
+            <div>
+                <img src="img/portifolio03.jpg" alt="">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam odio suscipit ea nobis error ipsum
+                    facilis aperiam nesciunt odit fuga rem aut est quam quia, eaque, veritatis repudiandae doloremque.
+                    Quod.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi omnis quisquam exercitationem
+                    quibusdam? Velit quidem accusamus recusandae obcaecati laborum deserunt, nesciunt ad corporis neque
+                    cupiditate earum quasi quod numquam.</p>
+                <p class="terceiro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa cum officiis
+                    perferendis id voluptatem
+                    consequatur? Consequuntur ea soluta exercitationem magni eveniet recusandae quae. Provident odit
+                    atque aspernatur officiis sed sint!</p>
+            </div>
+        </div>
+    </main>
+    <Footer>
+        <p>Todos os direitos reservados</p>
+    </Footer>
+</body>
+
+</html>

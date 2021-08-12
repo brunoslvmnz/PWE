@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: blue;
+            padding: 10px;
+            height: 500px;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /*flex-flow: row wrap; direction + wrap */
+            justify-content: space-around;
+            
+        }
+
+        .container>div {
+            background-color: yellow;
+            width: 80px;
+            margin: 10px; 
+            padding: 10px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>caixa 1</div>
+        <div>caixa 2</div>
+        <div>caixa 3</div>
+        <div>caixa 4</div>
+
+    </div>
+</body>
+
+</html>

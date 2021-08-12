@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form>
+        <label for="Nome">Nome: </label><input type="text" maxlength="40" id="Nome"></imput>
+        <br>
+        <br>
+
+        <fieldset>
+        <legend>Sexo:</legend>
+        <input type="radio" name="sexo" id="masc"> <label for="masc">Masculino</label>
+        <input type="radio" name="sexo" id="fem">  <label for="fem"> Feminino</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+        <legend>Estado civil: </legend>
+        <input type="radio" name="estadocivil" id="solt"> <label for="solt">Solteiro </label>
+        <input type="radio" name="estadocivil" id="casad"> <label for="casad">Casado </label>
+        <input type="radio" name="estadocivil" id="viuvo"> <label for="viuvo">Viuvo</label>
+        </fieldset>
+        <br>
+
+        Estado:
+        <select>
+            <option>Minas Gerais</option>
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+        </select>
+        <br>
+
+        Deixe sua opinião:
+        <br>
+        <textarea rows="4"></textarea>
+    </form>
+</body>
+</html>
